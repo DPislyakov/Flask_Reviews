@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block head %}
+	{{super()}}
+{% endblock %}
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='img.css') }}">
+<div align="center">
+	<h2 class="head">Список фильмов:</h2>
+{% for a in articles %}
+	<br><br>
+
+	<article class="forma">
+		<div class="title">Название фильма</div>
+		<h1 class="cinema"> {{a.nameCinema}}</h1>
+		<div class="title">Режиссер фильма</div>
+		<h2 class="aut"> {{a.author}}</h2>
+		<div class="title">Дата первой публикации</div>
+		<section class="date"> {{a.firstPublic}}</section>
+		<hr>
+	</article>
+	</hr>
+{% endfor %}
+	</div>
+<a class="back" href="{{ url_for('main_page') }}">Вернуться на главную</a>
+{% endblock %}

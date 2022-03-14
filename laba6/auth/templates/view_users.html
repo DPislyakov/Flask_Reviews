@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='img.css') }}">
+<div align="center">
+{% if users %}
+	<h2 class="head">Список зарегистрированных пользователей:</h2>
+	<ul class="forma">
+	{% for user in users %}
+		<h4 class="username">{{user.name}}</h4>
+	{% endfor %}
+	</ul>
+{% else %}
+	<span>Нет пользователей</span>
+{% endif %}
+</div>
+<a class="back" href="{{ url_for('main_page') }}">Вернуться на главную</a>
+{% endblock %}

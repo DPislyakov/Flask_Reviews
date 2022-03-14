@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='img.css') }}">
+	<head>
+		{% block head %}
+		<title>DmitryReview</title>
+		<meta charset="utf-8">
+		<style>
+			div.field-wrapper {
+			padding-bottom:24px;
+		}
+		</style>
+		{% endblock %}
+	</head>
+	<body class="all">
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<div class="messages">
+					<ul>
+						{% for msg in messages %}
+							<li> {{msg}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			{% endif %}
+		{% endwith %}
+		{% block main %}
+		Hello world!
+		{% endblock %}
+	</body>
+</html>

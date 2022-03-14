@@ -1,0 +1,199 @@
+.head{color: #0000FF;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:35px;
+            display:flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        background-color: #1E90FF;
+        /* Здесь тоже работают свойства распределения justify и align */
+        /*justify-content: center;*/
+        /*align-items: flex-end;*/
+        justify-content: center;
+        /*align-items: flex-end;*/
+        min-height:100%;
+        border-radius: 60px;
+}
+
+.username{
+            color:#0000FF;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:15px;
+}
+.forma{
+display:flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        background-color: #1E90FF;
+        /* Здесь тоже работают свойства распределения justify и align */
+        /*justify-content: center;*/
+        /*align-items: flex-end;*/
+        justify-content: center;
+        /*align-items: flex-end;*/
+        min-height:100%;
+        border-radius: 60px;
+}
+
+.cinema{
+color:#0000FF;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:25px;
+
+        padding: 20px 20px;
+                width: 150px;
+                height: 25px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #00FA9A;
+
+}
+
+.title{
+color: black;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:25px;
+            text-decoration:underline;
+}
+
+.date{
+            color: #00FA9A;
+            font-style: oblique;
+
+            font-size:25px;
+}
+
+.aut{
+color: #00FA9A;
+            font-style: oblique;
+
+            font-size:25px;
+}
+
+.author{
+            color: #00FA9A;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:15px;
+            text-align: center;
+            padding: 20px 20px;
+                width: 350px;
+                height: 15px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #1E90FF;
+}
+
+.back{
+color: black;
+font-size:15px;
+float: right;
+
+}
+
+.got{
+color: #00FA9A;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:35px;
+            text-align: center;
+            padding: 20px 20px;
+                width: 350px;
+                height: 15px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #1E90FF;
+}
+
+.back2{
+color: black;
+font-size:25px;
+float: center;
+}
+
+.menu{
+color: #00FA9A;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:35px;
+            text-align: center;
+            padding: 20px 20px;
+                width: 350px;
+                height: 15px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #1E90FF;
+}
+
+.border{
+                padding: 80px 50px;
+                width: 500px;
+                height: 500px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #00FA9A;
+            }
+.input{
+color: black;
+font-size:35px;
+float: right;
+}
+.output{
+color: black;
+font-size:35px;
+float: right;
+}
+
+.got2{
+color: #00FA9A;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:35px;
+            text-align: center;
+            padding: 20px 20px;
+                width: 350px;
+                height: 200px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #1E90FF;
+}
+.all{
+background-color: #00FFFF;
+}
+
+.title2{
+color: black;
+
+            font-weight: bold;
+            font-size:25px;
+            text-decoration:underline;
+}
+
+.head2{
+color: #00FA9A;
+            font-style: oblique;
+            font-weight: bold;
+            font-size:35px;
+            text-align: center;
+            padding: 20px 20px;
+                width: 350px;
+                height: 15px;
+                border: 1px solid #236B8E;
+                border-radius: 10px;
+                background-color: #1E90FF;
+}
+
+.aut2{
+color: #013A33;
+            font-style: oblique;
+
+            font-size:25px;
+}
+
+.button{
+color: red;
+font-size:25px;
+float: right;
+}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+	{% block main %}
+		<div class="field-wrapper">
+			<form method="post" action="">
+			{{form.hidden_tag()}}
+			{{form.name.label}}</br>
+			{{form.name}}
+			</div>
+			<div class="field-wrapper">
+			{{form.password.label}}</br>
+			{{form.password}}
+			</div>
+			<div class="field-wrapper">
+			{{form.submit}}
+			</div>
+			</form>
+	{% endblock %}

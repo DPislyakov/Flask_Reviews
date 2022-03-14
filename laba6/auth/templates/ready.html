@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='img.css') }}">
+<div align="center">
+      <h2 class ="got"> Вы успешно зарегистрировались </h2>
+      <a class="back2" href="{{ url_for('main_page') }}">Хотите вернуться в главное меню?</a>
+</div>
+
+
+{% endblock %}

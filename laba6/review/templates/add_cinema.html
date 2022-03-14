@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block head %}
+	{{super()}}
+{% endblock %}
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Добавить данные о кинофильме</h1>
+             </div>
+			  <h2 class="word">
+<form action="" method="post">
+	{{form.hidden_tag()}}
+	<div class="field-wrapper">
+		{{form.name.label}}<br/>
+		{{form.name}}
+	</div>
+	<div class="field-wrapper">
+		{{form.nameAuthor.label}}<br/>
+		{{form.nameAuthor}}
+	</div>
+	<div class="field-wrapper">
+		{{form.date.label}}<br/>
+		{{form.date}}
+	</div>
+	<div class="field-wrapper">
+		{{form.submit}}
+	</div>
+</form>
+				  </h2>
+		  </div>
+		</div>>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block head %}
+	{{super()}}
+{% endblock %}
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='img.css') }}">
+<div align="center">
+	<h2 class="head">Рецензии:</h2>
+{% for a in articles %}
+	<br><br>
+
+	<article class="forma">
+		<div class="title">Название фильма</div>
+		<h1 class="cinema"> {{a.nameofCinema}}</h1>
+		<div class="title">Рецензия</div>
+		<h1 class="aut"> {{a.text}}</h1>
+		<div class="title">Оценка</div>
+		<h2 class="date"> {{a.rating}}</h2>
+		<hr>
+		<div class="author"> Опубликовал: {{a.author}} </div>
+		<h1><a class="button" href="{{url_for('reviews.create_rr', id =  a.id,name = a.nameofCinema ) }}">Оценить рецензию</a></h1>
+	</article>
+	{% for r in rating %}
+	<br><br>
+	<article>
+			{% if r.id_cinema==a.id%}
+				<h2 class="head2">Оценка рецензии:</h2>
+<!--				<div class="title2">Оценка рецензии</div>-->
+<!--				<h1 class="cinema"> {{a.nameofCinema}}</h1>-->
+				<div class="title2">Полезна ли:</div>
+				{% if r.good == '1' %}
+				<h1 class="aut2"> Рецензия была полезна</h1>
+				{% endif %}
+				{% if r.good == '0' %}
+				<h1 class="aut2"> Рецензия не была полезна</h1>
+				{% endif %}
+				<div class="title2">Комментарий</div>
+				<h2 class="aut2"> {{r.kom}}</h2>
+				<hr>
+				<div class="author"> Прокомментировал: {{r.author}} </div>
+		</article>
+			{% endif %}
+		{% endfor %}
+	</hr>
+{% endfor %}
+</div>
+<a class="back" href="{{ url_for('main_page') }}">Вернуться на главную</a>
+{% endblock %}

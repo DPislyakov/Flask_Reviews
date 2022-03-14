@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head %}
+	{{super()}}
+{% endblock %}
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Регистрация пользователя</h1>
+             </div>
+			  <h2 class="word">
+<form action="" method="post">
+	{# Не забываем hidden_tag() в формах! Без этого формы не будут проходить валидацию #}
+	{{form.hidden_tag()}}
+	<div class="field-wrapper">
+		{{form.name.label}}<br/>
+		{{form.name}}
+	</div>
+	<div class="field-wrapper">
+		{{form.password.label}}<br/>
+		{{form.password}}
+	</div>
+	<div class="field-wrapper">
+		{{form.submit}}
+	</div>
+</form>
+			  </h2>
+		  </div>
+		</div>>
+{% endblock %}
